@@ -17,6 +17,14 @@ public class Exercise2a {
    */
   public static int sumSelective(int[] numbers) {
     // TODO
-    return 0;
+    int total = 0;
+    for (int number: numbers){
+      if (number %2 ==0 && number > 10){
+       continue;
+      }else if (number %2 ==0  || number > 10){
+        total += number;
+      }
+    }
+    return total;
   }
 }
