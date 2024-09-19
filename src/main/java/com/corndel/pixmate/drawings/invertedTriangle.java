@@ -1,16 +1,17 @@
 package com.corndel.pixmate.drawings;
 
-public class triangle {
+public class invertedTriangle {
     public static void main(String[] args) {
         /*
-         *
-         **
-         ***
-         ****
+         ******
          *****
+         ****
+         ***
+         **
+         *
          */
         int height = 6;
-        for (int i = 0; i < height; i++) {
+        for (int i = height; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 System.out.print("*");
             }

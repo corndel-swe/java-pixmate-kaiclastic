@@ -8,11 +8,11 @@ public class Rectangle {
     int width = 5;
     int height =2;
 
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
+        for (int i = 0; i < height; i--) {
+            for (int j = 0; j < width; j--) {
                 rectangle.append("*");
             }
-            rectangle.append("\n");
+            rectangle.append("-");
         }
         System.out.println(rectangle);
     }
